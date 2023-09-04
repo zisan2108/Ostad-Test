@@ -152,8 +152,12 @@
         </script>
  -->
 
+
+
+
 <!-- 45 DOM Manipulate CSS Class -->
 
+<!-- 
 <h1 id="MyID" class="">Bangladesh</h1>
 
 <button onclick="AddStyle()">Add Style</button>
@@ -171,6 +175,34 @@
     }
 
 </script>
+ -->
+
+<!-- 46 Create Element Append Element -->
+
+        <ul id="MyItems"></ul> <br><br>
+        <input id="MyInput"> <br><br>
+        <button onclick="AddItem()">Add</button>
+
+
+        <script>
+           function AddItem(){
+            var itemValue =document.getElementById('MyInput').value;
+
+            var listItem = document.createElement('li');
+            listItem.innerHTML = itemValue;
+
+            var MyItems = document.getElementById('MyItems');
+            MyItems.appendChild(listItem);
+
+            }
+        </script>
+
+
+
+
+
+
+
 
 
 </body>
