@@ -81,6 +81,7 @@
  </script>
  -->
 
+<!-- 
  <p> </p>
  <button onclick="Demo()">Click</button>
 
@@ -92,11 +93,42 @@
 
     }
  </script>
+ -->
+
+
+ <!-- 43 HTML DOM Document -->
+
+<!-- 
+ <button onclick="Demo()">Click</button>
+
+ <script>
+    function Demo(){
+      let w= window.open
+      w.document.open();
+      w.document.write("Hello New Window")
+      w.document.close();
+
+    }
+ </script>
+ -->
 
 
 
+ <P>1</P>
+ <P>2</P>
+ <P>3</P>
+ <P>4</P>
+ <P>5</P>
+ <button onclick="Demo()">Click</button>
 
+ <script>
+    function Demo(){
+     let MyItems = document.getElementsByTagName('p');
+     let ItemCount = MyItems.length;
+     alert(ItemCount);
 
+    }
+ </script>
 
 
 
