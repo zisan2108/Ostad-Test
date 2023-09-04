@@ -7,7 +7,9 @@
 </head>
 <body>
 
-<!-- 41 Finding Elements By DOM 
+<!-- 41 Finding Elements By DOM  -->
+
+ <!--
 
     <h1 id="MyID"></h1>
 
@@ -46,7 +48,7 @@
 </script> 
 -->
 
-
+<!-- 
     <p>p1</p>
     <p>p2</p>
     <p>p3</p>
@@ -57,6 +59,45 @@
     MyElements[2].innerHTML="p3 Manupulated";
 
 </script>
+-->
+
+
+<!-- 42 HTML DOM Document -->
+
+<!-- 
+ <p> </p>
+ <button onclick="Demo()">Click</button>
+
+ <script>
+    function Demo(){
+        // var info=document.cookie;
+        // var info=document.domain;
+        // var info=document.lastModified;
+        // var info=document.title;
+        var info=document.URL;
+        document.getElementsByTagName('p')[0].innerHTML=info;
+
+    }
+ </script>
+ -->
+
+ <p> </p>
+ <button onclick="Demo()">Click</button>
+
+ <script>
+    function Demo(){
+        document.open('text/html','replace');
+        document.write("<h2> Replace Name</h2>");
+        document.close();
+
+    }
+ </script>
+
+
+
+
+
+
 
 
 </body>
